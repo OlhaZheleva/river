@@ -1,33 +1,30 @@
+<!------- Footer block --------->
 <footer class="footer" id="footer">
     <div class="container">
-        <a class="up" href="#up" id="upBtn"></a>
-        <div class="logo">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/main-logo.svg" alt="logo">
+        <div class="">
+            <a href="" class="logo"><img src="<?php echo get_template_directory_uri();?>/images/icon-logo.svg" alt=""></a>
+            <p>Investment Solutions <br>for a Dynamic World</p>
         </div>
-        <div class="content">
-            <p>COPYRIGHT © 2023 MYPORUCH.<br> ALL RIGHTS RESERVED.</p>
-            <?php
-            wp_nav_menu(
-                array(
-                    'menu_class' => 'nav',
-                    'theme_location' => 'footer_menu'
-                ));
-            ?>
 
-            <div class="social">
-                <a href="https://t.me/+p12XGL9izsJlZTYy"><img
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/telegram.svg"
-                        alt="telegram icon"></a>
-                <a href="https://www.instagram.com/myporuch/?igshid=YmMyMTA2M2Y%3D"><img
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg"
-                        alt="instagram icon"></a>
-                <!-- <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/twitter.svg" alt="twitter icon"></a> -->
-            </div>
+        <div class="">
+            <span>Contact us</span>
+            <a href="mailto:info@vradvisors.com">info@vradvisors.com</a>
         </div>
+        <div class="social">
+            <a href=""><img src="<?php echo get_template_directory_uri();?>/images/facebook.svg" alt=""></a>
+            <a href=""><img src="<?php echo get_template_directory_uri();?>/images/Instagram.svg" alt=""></a>
+            <a href=""><img src="<?php echo get_template_directory_uri();?>/images/Whatsapp.svg" alt=""></a>
+            <a href=""><img src="<?php echo get_template_directory_uri();?>/images/Telegram.svg" alt=""></a>
+        </div>
+        <img src="<?php echo get_template_directory_uri();?>/images/piver.svg" alt="">
     </div>
 </footer>
 </div>
 </div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/script.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/zoom.js"></script>
+
 
 <?php wp_footer(); ?>
 

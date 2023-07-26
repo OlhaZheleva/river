@@ -19,20 +19,8 @@ add_action('wp_enqueue_scripts', 'auto_scripts');
 function auto_scripts()
 {
 
-    // Script and css for page
 
-    // css
-    wp_enqueue_style(
-        'main_css', get_template_directory_uri() . '/assets/css/main.css',
-        array(),
-        null
-    );
 
-    // js
-    wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.7.0.min.js');
-    wp_enqueue_script('script_main', get_stylesheet_directory_uri() . '/assets/js/script.js', array('jquery'), filemtime(get_theme_file_path('/assets/js/script.js')));
-    wp_enqueue_script('slick_js', get_stylesheet_directory_uri() . '/assets/js/slick.min.js', array('jquery'), filemtime(get_theme_file_path('/assets/js/slick.min.js')));
-    wp_enqueue_script('zoom_js', get_stylesheet_directory_uri() . '/assets/js/zoom.js', array('jquery'), filemtime(get_theme_file_path('/assets/js/zoom.js')));
 }
 ;
 
@@ -49,4 +37,3 @@ add_action('after_setup_theme', function () {
         'footer_menu' => 'Меню підвал'
     ]);
 });
-
